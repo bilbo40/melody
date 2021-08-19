@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: local("Bebas Neue Book Regular"), local("BebasNeueBook"),
+    url("../fonts/BebasNeueBook.woff2") format("woff2"),
+    url("../fonts/BebasNeueBook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -57,4 +67,67 @@ body {
   line-height: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.main {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+}
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-title {
+  margin: 0;
+  color: #635854;
+  font-family: "Bebas Neue Book", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.home-image path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.home-image path:hover {
+  opacity: 1;
+}
+
+.counter-group {
+  display: flex;
+  flex-direction: column;
+}
+.counter {
+  color: #635854;
+  font-family: "Bebas Neue Book", sans-serif;
+  font-size: 124px;
+  margin-top: 30px;
+}
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+
+.button-primary {
+  background: #3596f5;
+  border-radius: 6px;
+  padding: 16px 36px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
